@@ -17,6 +17,7 @@ function install_gems() {
     for GEM in $GEMS; do
       echo -e "\ngem '$GEM'" >> Gemfile
     done
+    echo -e "\ngem 'google-api-client', '~> 0.8.6'" >> Gemfile
     bundle install
   fi
 }
