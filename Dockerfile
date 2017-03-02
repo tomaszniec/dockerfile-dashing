@@ -19,7 +19,10 @@ RUN mkdir /dashing && \
     mkdir /dashing/config && \
     mv /dashing/config.ru /dashing/config/config.ru && \
     ln -s /dashing/config/config.ru /dashing/config.ru && \
-    ln -s /dashing/config /config
+    ln -s /dashing/config /config && \
+    ln -s /dashing/config/bitbucket.rb /dashing/bitbucket.rb && \
+    ln -s /dashing/config/jenkins.rb /dashing/jenkins.rb && \
+    ln -s /dashing/config/dashing.iml /dashing/dashing.iml
 
 COPY run.sh /
 
