@@ -1,6 +1,6 @@
-FROM ruby:2.3.1
+FROM ruby:1.9.3
 
-MAINTAINER Fredrik Vihlborg <fredrik.wihlborg@gmail.com>
+MAINTAINER Tomasz Niec <errno@errno.info>
 RUN apt-get update && \
     apt-get -y install nodejs && \
     apt-get -y clean
